@@ -12,9 +12,12 @@ public class Movie {
         age = keyboard.nextInt();
         day_of_the_week = keyboard.next();
 
+        char day_of_week = day_of_the_week.toLowerCase().charAt(0);
+
         double price = 0;
         // check if day of the week is tuesday
-        if(day_of_the_week.equalsIgnoreCase("t")) {
+        if(day_of_week == 't' || day_of_the_week.equalsIgnoreCase("t")) {
+
             price = 5;
         } else {
             if(age < 18) {
