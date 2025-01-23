@@ -11,19 +11,17 @@ public class FileOutputAppend {
      */
     public static void main(String [] args) throws Exception {
         // Step 1: file the file
-        String filename = "C:/temp/file.txt";
+        String filename = "file.txt";
 
         // Step 2: open the file
         // in order to append, you need to use FileWriter, and the second parameter
         // in the constructor will affect whether you are overwriting
         // or appending
-        FileWriter fw = new FileWriter( filename, true );
+        FileWriter fw = new FileWriter( filename, false );
         PrintWriter outputFile = new PrintWriter(fw);
 
         // Step 3: process the file
-        outputFile.printf("writing to the file");
-        outputFile.printf("writing to the file");
-        outputFile.printf("\n\nwriting to the file\n\n");
+        outputFile.printf("appending to the file");
 
         // Step 3: continue processing the file...
         int i;
