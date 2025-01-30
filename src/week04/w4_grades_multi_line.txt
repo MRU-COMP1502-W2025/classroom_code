@@ -1,12 +1,12 @@
-89.3
-COMP1502
-Anjulee
 70.4
 COMP1701
-Arvind
+Arvind Shah
+89.3
+COMP1502
+Anjulee Smith
 75.2
 COMP2511
-Julia
+Julia Campbell
 85.2
 COMP4555
-Robert
+Robert Moses
