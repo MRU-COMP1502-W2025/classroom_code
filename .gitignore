@@ -3,3 +3,4 @@ src/config.*
 doc/
 .vscode/
 src/javadoc
+*.jdgenerator
