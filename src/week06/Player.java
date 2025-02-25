@@ -14,15 +14,7 @@ public class Player {
     private List<String> uniform;
 
     public Player() {
-        this.jersey = -1;
-        this.position = "";
-        this.name = "";
-
-        this.height = 0;
-        this.weight = 0;
-        // default to today as the birthdate
-        this.birthdate = new Date();
-        this.uniform = new ArrayList<>();
+        this(0, "");
     }
 
     public Player(int jersey, String name) {
@@ -97,7 +89,7 @@ public class Player {
      * override the default toString behaviour
      */
     public String toString() {
-        String returnString = "[name]: " + name + " [jersey]: " +jersey;
+        String returnString = "name: " + name + "\n" + "jersey #: " +jersey+ "\n";
         return returnString;
     }
 }
