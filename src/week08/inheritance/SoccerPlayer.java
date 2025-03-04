@@ -1,10 +1,10 @@
-package week06;
+package week08.inheritance;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Player {
+public class SoccerPlayer {
     private int jersey;
     private String position;
     private String name;
@@ -13,11 +13,11 @@ public class Player {
     private Date birthdate;
     private List<String> uniform;
 
-    public Player() {
+    public SoccerPlayer() {
         this(0, "");
     }
 
-    public Player(int jersey, String name) {
+    public SoccerPlayer(int jersey, String name) {
         this.jersey = jersey;
         position = "";
         this.name = name;

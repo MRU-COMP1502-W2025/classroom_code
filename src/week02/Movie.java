@@ -30,5 +30,7 @@ public class Movie {
         }
 
         System.out.printf("Your movie ticket costs $%2.2f", price);
+        keyboard.close();
+
     }
 }

@@ -32,5 +32,6 @@ public class Payroll {
     // System.out.println(1000 % 38);
     // System.out.println(1000.0 / 38);
     // end of code added in class
+    sc.close();
   }
 }

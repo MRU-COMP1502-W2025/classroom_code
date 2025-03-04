@@ -33,5 +33,6 @@ public class ParseStrings {
                 System.out.println();
             }
         }
+        scnr.close();
     }
 }

@@ -1,10 +1,9 @@
 package test;
 
-import static org.junit.Assert.assertEquals;
-// import static org.junit.Assert.fail;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import week06.Player;
 
@@ -38,9 +37,8 @@ public class PlayerTest {
         Player testPlayer = new Player(23, "Apoorve");
 
         String printedString = "name: Apoorve\n"+
-                                "jersey #: 23\n";
+                                "jersey #: 23";
 
         assertEquals(printedString, testPlayer.toString());
     }
-
 }

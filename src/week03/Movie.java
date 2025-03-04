@@ -39,6 +39,6 @@ public class Movie {
         }
 
         System.out.printf("\n\nTotal tickets sold during shift was: $%2.2f\n", runningTotal);
-
+        keyboard.close();
     }
 }
