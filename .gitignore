@@ -3,3 +3,4 @@ src/config.*
 doc/
 src/javadoc
 *.jdgenerator
+*DS_Store*

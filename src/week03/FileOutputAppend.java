@@ -33,5 +33,6 @@ public class FileOutputAppend {
         // Step 4: close the file
         outputFile.flush(); 
         fw.close();
+        outputFile.close();
     }
 }

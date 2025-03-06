@@ -85,9 +85,18 @@ public class SoccerPlayer {
         this.uniform = uniform;
     }
 
-    /**
+    /*
+     * 
+     */
+    public void shoot() {
+        System.out.println("whirrrrrllll....");
+    }
+
+
+    /*
      * override the default toString behaviour
      */
+    @Override
     public String toString() {
         String returnString = "name: " + name + "\n" + "jersey #: " +jersey;
         return returnString;
