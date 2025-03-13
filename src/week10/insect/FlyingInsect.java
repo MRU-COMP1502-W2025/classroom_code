@@ -1,4 +1,4 @@
-package week09.insect;
+package week10.insect;
 
 /**
  * This is a class-level Javadoc comment
