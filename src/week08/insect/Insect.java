@@ -14,8 +14,19 @@ public class Insect {
 	private String skeleton;
 	private ArrayList<String> parts_of_body;
 
+	/**
+	 * 0 parameter default constructor
+	 */
 	public Insect() {
-		name = "";
+		this("");
+	}
+
+	/**
+	 * One parameter constructor
+	 * @param name - the name of the insect
+	 */
+	public Insect(String name) {
+		this.name = name;
 		invertebrate = true;
 		pairs_of_legs = 6;
 		compound_eyes = true;
@@ -23,10 +34,16 @@ public class Insect {
 		parts_of_body = new ArrayList<>();
 	}
 
-	public Insect(String name) {
-		this.name = name;
-	}
-
+	/**
+	 * Deep copy constructor for an insect with 6-parameters provided
+	 * 
+	 * @param name - the name of the insect
+	 * @param invertebrate - <code>true</code> if invertebrate, <code>false</code> otherwise
+	 * @param pairs_of_legs - number of legs
+	 * @param compound_eyes - <code>true</code> if the insect has compound eyes, <code>false</code> otherwise
+	 * @param skeleton - type of skeleton
+	 * @param parts_of_body - the names of the different parts of the body
+	 */ 
 	public Insect(String name, boolean invertebrate, int pairs_of_legs,
 			boolean compound_eyes, String skeleton, ArrayList<String> parts_of_body) {
 		this.name = name;
@@ -46,6 +63,9 @@ public class Insect {
 		// }
 	}
 
+	/**
+	 * Deep copy constructor from an existing object of type Insect
+	 */
 	public Insect(Insect oldInsect) {
 		this.name = oldInsect.getName();
 		this.invertebrate = oldInsect.getInvertebrate();
