@@ -20,6 +20,11 @@ public class FlyingInsect extends Insect {
 		return wings;
 	}
 
+	public String makeNoise() {
+		return "buzzing";
+	} 
+
+
 	/**
 	 * When objects of this class are output, this class's 
 	 * instance variables will be added to the end of 

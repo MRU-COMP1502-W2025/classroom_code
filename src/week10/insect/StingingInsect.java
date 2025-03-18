@@ -7,15 +7,16 @@ public class StingingInsect extends Insect {
 
 	private boolean isLethal;
 
-
 	public boolean getIsLethal() {
 		return isLethal;
 	}
-
-
 	public void setIsLethal(boolean isLethal) {
 		this.isLethal = isLethal;
 	}
+
+	public String makeNoise() {
+		return "silent but lethal";
+	} 
 
 	/**
 	 * When objects of this class are output, this class's 

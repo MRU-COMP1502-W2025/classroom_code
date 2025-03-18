@@ -53,7 +53,7 @@ public abstract class Insect {
 		}
 	}
 
-	public abstract String makeNoise();
+	public abstract String makeNoise(); 
 
 	// getters and setters
 	public String getName() {
