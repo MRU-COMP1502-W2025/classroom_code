@@ -36,7 +36,8 @@ public class InsectDemo {
         // System.out.println(listOfInsects);
 
         // 5. 
-        // create a new variable called 'dungBeetle' of type Insect and set it to the variable 'beetle'
+        // create a new variable called 'dungBeetle' of type 
+        // Insect and set it to the variable 'beetle'
         //
         Insect dungBeetle = beetle;
 
@@ -54,6 +55,15 @@ public class InsectDemo {
         /*
          * we will write this code in class on Tuesday, March 18th
          */
+        dungBeetle = new FlyingInsect();
+        dungBeetle.setName("Dung Beetle");
+        if(beetle.equals(dungBeetle)) {
+            System.out.println("they are the same!");
+        } else {
+            System.out.println("DIFFERENT");
+        }
+
+
 
         // 8.
         // using the variable 'bee', set the name for the bee to 'bumble bee'
@@ -62,7 +72,8 @@ public class InsectDemo {
 
 
         // 9.
-        // using the index location in the arraylist where the ladybug is stored, set the name for the ladybug to 'queen elizabeth'
+        // using the index location in the arraylist where the ladybug is stored, 
+        // set the name for the ladybug to 'queen elizabeth'
         //
         listOfInsects.get(2).setName("queen elizabeth");
         

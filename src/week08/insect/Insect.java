@@ -155,4 +155,13 @@ public class Insect {
 		return returnString;
 
 	}
+
+	public boolean equals(Insect other) {
+
+		if(this.getName().equals(other.getName() )) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
