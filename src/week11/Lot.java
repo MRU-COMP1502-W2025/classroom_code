@@ -5,7 +5,7 @@ import java.util.Random;
 
 import week11.exception.NegativeMeasurementException;
 
-public class Lot {
+public class Lot implements Comparable{
     private String lotNum;
     private int length;
     private int width;
@@ -36,6 +36,7 @@ public class Lot {
     public Lot(Lot other) {
         Random generateRandom = new Random(12);
         this.lotNum = Long.toString(generateRandom.nextLong());
+        // this.lotNum = Key.generateLotNum();
         this.length = other.getLength();
         this.width = other.getWidth();
         this.unitPrice = other.getUnitPrice();
@@ -74,9 +75,10 @@ public class Lot {
     }
 
     public double getLotValue() {
-        return this.getLength() * this.getLength() * this.getUnitPrice();
+        return this.getLength() * this.getWidth() * this.getUnitPrice();
     }
 
+    
     public boolean equals(Lot other) {
         if (this.getLength() == other.getLength() && this.getWidth() == other.getWidth()) {
             return true;
@@ -92,6 +94,14 @@ public class Lot {
                 + " lot value: " + getLotValue() + "}";
 
         return returnString;
+    }
+
+    @Override
+    public int compareTo(Object other) {
+        if (other instanceof Lot) {
+            return compareTo((Lot)other);
+        }
+        return -1;
     }
 
     public int compareTo(Lot other) {
