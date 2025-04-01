@@ -10,6 +10,7 @@ public class NegativeMeasurementException extends Exception {
      */ 
     public NegativeMeasurementException() {
         super("ERROR: measurements cannot be negative!");
+        System.err.println("say hello...");
     }
 
     /**
@@ -25,6 +26,7 @@ public class NegativeMeasurementException extends Exception {
      * @param measurement
      */
     public NegativeMeasurementException(int measurement) {
-        super("ERROR: measurements cannot be negative, and you provided: " +measurement);
+        // super("ERROR: measurements cannot be negative, and you provided: "  + measurement);
+        this((double)measurement);
     }
 }
